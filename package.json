@@ -1,0 +1,27 @@
+{
+  "name": "node-cron-jobs",
+  "description": "Schedules cron like jobs",
+  "keywords": [
+    "cron",
+    "jobs"
+  ],
+  "version": "0.1",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/marsinvasion/node-cron-jobs.git"
+  },
+  "author": {
+    "name": "Anoop Kulkarni",
+    "url": "http://anoopkulkarni.com"
+  },
+  "main": "./lib/main.js",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://github.com/marsinvasion/node-cron-jobs/raw/master/LICENSE"
+    }
+  ],
+  "dependencies":{
+    "node-cron":">=1.0"
+  }
+}
