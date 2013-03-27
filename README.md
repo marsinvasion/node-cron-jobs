@@ -1,5 +1,7 @@
 Configuration for creating your own jobs
 
+**This is a work in progress, please wait till the finished product**
+
 Introduction
 ------------
 
@@ -23,6 +25,14 @@ NODE_ENV - This can be set to read from a different json file. If not set the de
 
 This will read the configuration file from /mydir/development.json. Incase neither environment variables are set it will read config.json from the current working directory.
 
+A sample config file
+
+{
+  "jobs":[
+    {"handle":"1","cron":"* * * * * *","timezone":"America/Los_Angeles"},
+    {"handle":"2","cron":"* * * * * *","timezone":"America/Los_Angeles"}
+  ]
+}
 LICENSE
 -------
 
