@@ -31,7 +31,7 @@ A sample config file
     {
       "jobs":[
         {"handle":"firstjob","cron":"* * * * * *","timezone":"America/Chicago"},
-        {"handle":"secondjob","cron":"* * * * * *","timezone":"America/Los_Angeles"}
+        {"handle":"secondjob","cron":"* * * * * *","timezone":"America/Los_Angeles","start":"true"}
       ]
     }
 
