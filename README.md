@@ -28,12 +28,20 @@ This will read the configuration file from /mydir/development.json. Incase neith
 
 A sample config file
 
-{
-  "jobs":[
-    {"handle":"1","cron":"* * * * * *","timezone":"America/Los_Angeles"},
-    {"handle":"2","cron":"* * * * * *","timezone":"America/Los_Angeles"}
-  ]
-}
+    {
+      "jobs":[
+        {"handle":"firstjob","cron":"* * * * * *","timezone":"America/Chicago"},
+        {"handle":"secondjob","cron":"* * * * * *","timezone":"America/Los_Angeles"}
+      ]
+    }
+
+To reference node-cron-jobs in your code. Handle passed in the config contains a reference to the cron job
+
+    var nodejobs = require('node-cron-jobs');
+    var jobs = nodejobs.jobs;
+    var job1 = jobs.firstjob;
+    var job2 = jobs.secondjobs;
+
 LICENSE
 -------
 
