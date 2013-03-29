@@ -40,7 +40,7 @@ To reference node-cron-jobs in your code. Handle passed in the config contains a
     var nodejobs = require('node-cron-jobs');
     var jobs = nodejobs.jobs;
     var job1 = jobs.firstjob;
-    var job2 = jobs.secondjobs;
+    var job2 = jobs.secondjob;
 
 LICENSE
 -------
