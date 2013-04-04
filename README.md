@@ -1,7 +1,5 @@
 Configuration for creating your own jobs
 
-**This is a work in progress, please wait till the finished product**
-
 Introduction
 ------------
 
@@ -41,6 +39,13 @@ To reference node-cron-jobs in your code. Handle passed in the config contains a
     var jobs = nodejobs.jobs;
     var job1 = jobs.firstjob;
     var job2 = jobs.secondjob;
+
+Add a callback function which kicks off everytime it runs
+    var func = function(){
+      console.log('print this every time the job runs');
+    }
+    jobs.firstjob.addCallback(func);
+    jobs.firstjob.start(); //assuming you haven't called start in the config file
 
 LICENSE
 -------
