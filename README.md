@@ -41,6 +41,7 @@ To reference node-cron-jobs in your code. Handle passed in the config contains a
     var job2 = jobs.secondjob;
 
 Add a callback function which kicks off everytime it runs
+
     var func = function(){
       console.log('print this every time the job runs');
     }
