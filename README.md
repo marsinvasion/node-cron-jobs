@@ -49,7 +49,7 @@ Add a callback function which kicks off everytime it runs
     jobs.firstjob.addCallback(func);
     jobs.firstjob.start(); //assuming you haven't called start in the config file
 
-The config parameters are configurable and chanegable per job. It can be accessed while creating the call back function or anywhere else required.
+The config parameters are configurable and changeable per job. It can be accessed while creating the call back function or anywhere else required.
 
     console.log(jobs.firstjob.config.url);
     console.log(jobs.firstjob.config.time); 
