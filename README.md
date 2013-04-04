@@ -28,7 +28,8 @@ A sample config file
 
     {
       "jobs":[
-        {"handle":"firstjob","cron":"* * * * * *","timezone":"America/Chicago"},
+        {"handle":"firstjob","cron":"* * * * * *","timezone":"America/Chicago", "config": {"url":"http://myfavurl.com","time":"30"}
+        },
         {"handle":"secondjob","cron":"* * * * * *","timezone":"America/Los_Angeles","start":"true"}
       ]
     }
@@ -47,6 +48,11 @@ Add a callback function which kicks off everytime it runs
     }
     jobs.firstjob.addCallback(func);
     jobs.firstjob.start(); //assuming you haven't called start in the config file
+
+The config parameters are configurable and chanegable per job. It can be accessed while creating the call back function or anywhere else required.
+
+    console.log(jobs.firstjob.config.url);
+    console.log(jobs.firstjob.config.time); 
 
 LICENSE
 -------
