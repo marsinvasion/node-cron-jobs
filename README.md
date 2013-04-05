@@ -31,7 +31,11 @@ A sample config file
         {"handle":"firstjob","cron":"* * * * * *","timezone":"America/Chicago", "config": {"url":"http://myfavurl.com","time":"30"}
         },
         {"handle":"secondjob","cron":"* * * * * *","timezone":"America/Los_Angeles","start":"true"}
-      ]
+      ],
+      "config":{ //any key value pair
+        "dburl":"mydburl",
+        "port":"333"
+       }
     }
 
 To reference node-cron-jobs in your code. Handle passed in the config contains a reference to the cron job
@@ -49,8 +53,9 @@ Add a callback function which kicks off everytime it runs
     jobs.firstjob.addCallback(func);
     jobs.firstjob.start(); //assuming you haven't called start in the config file
 
-The config parameters are configurable and changeable per job. It can be accessed while creating the call back function or anywhere else required.
+The config parameters are configurable globally or changeable per job. It can be accessed while creating the call back function or anywhere else required.
 
+    console.log(nodejobs.config.dburl);
     console.log(jobs.firstjob.config.url);
     console.log(jobs.firstjob.config.time); 
 
