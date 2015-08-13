@@ -1,13 +1,11 @@
 # Configuration for creating your own jobs
 
 ## Introduction
-------------
 
 Node cron jobs lets you schedule your jobs in a cron based scheduling environment. It lets you set a default set of configuration parameters as well as parameters for different runtime environments (development, test, qa, stage, production etc.). 
 This leverages the work done with node-cron and lets you configure jobs in config files
 
 ## Quick Start
------------
 
 **In your project directory, install npm if not already installed**
 
@@ -60,13 +58,11 @@ The config parameters are configurable globally or changeable per job. It can be
     console.log(jobs.firstjob.config.time); 
 
 ## Dependencies
------------
 
 - [cron](https://github.com/ncb000gt/node-cron): Cron jobs for your node
 - [time](https://github.com/TooTallNate/node-time): &quot;time.h&quot; bindings for Node.js
 
 ## License
------------
 
 MIT
 
